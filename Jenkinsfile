@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Test') {
       environment {
-        Ci = 'true'
+        CI = 'true'
       }
       steps {
         sh './jenkins/scripts/test.sh'
